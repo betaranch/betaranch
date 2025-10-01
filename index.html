@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beta Ranch</title>
+  <meta name="description" content="Beta Ranch builds pragmatic software products. We iterate quickly to deliver useful tools like Yardhawk.">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph basic -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Beta Ranch">
+  <meta property="og:description" content="Pragmatic software projects built with care and velocity.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Beta Ranch",
+    "url": "https://betaranch.github.io/",
+    "description": "Beta Ranch builds pragmatic software products.",
+    "email": "hello@betaranch.com",
+    "sameAs": [
+      "https://github.com/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0f172a;
+      --text: #e5e7eb;
+      --muted: #a5b4fc;
+      --accent: #60a5fa;
+      --link: #93c5fd;
+      --border: #1f2937;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --text: #0f172a;
+        --muted: #4f46e5;
+        --accent: #2563eb;
+        --link: #2563eb;
+        --border: #e5e7eb;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,0.10), transparent 60%),
+                  radial-gradient(800px 600px at -10% 10%, rgba(165,180,252,0.12), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: saturate(140%) blur(6px);
+      background: color-mix(in oklab, var(--panel) 92%, transparent);
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--muted), var(--accent));
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+    }
+
+    main { flex: 1 0 auto; }
+    .hero {
+      padding: 52px 20px 28px;
+    }
+    .title {
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.15;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.2px;
+    }
+    .subtitle {
+      font-size: clamp(16px, 2.8vw, 18px);
+      color: color-mix(in oklab, var(--text), black 30%);
+      max-width: 56ch;
+      margin: 0;
+    }
+
+    .panel {
+      background: color-mix(in oklab, var(--panel) 94%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.25);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1.1fr 0.9fr; }
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+    p { margin: 0 0 10px 0; }
+    ul { margin: 0; padding-left: 18px; }
+
+    a { color: var(--link); text-underline-offset: 2px; }
+    a:hover { text-decoration: underline; }
+
+    .note {
+      font-size: 14px;
+      color: color-mix(in oklab, var(--text), black 40%);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: color-mix(in oklab, var(--panel) 92%, transparent);
+      font-size: 14px;
+    }
+    .foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand" aria-label="Beta Ranch">
+        <div class="mark" aria-hidden="true"></div>
+        <div>Beta Ranch</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <h1 class="title">Software that earns its keep</h1>
+      <p class="subtitle">Beta Ranch builds pragmatic, durable software. We favor small releases, steady iteration, and clear results over hype.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="grid">
+        <div class="panel">
+          <h2>What we do</h2>
+          <p>We explore ideas, ship tools, and keep them useful. Our focus is on products that reduce friction for developers and teams.</p>
+        </div>
+        <div class="panel">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Yardhawk</strong> — active development. Internal tooling focused on workflow and integration experiments.</li>
+          </ul>
+          <p class="note">More public details will be shared as projects mature.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" style="margin-top:20px;">
+      <div class="panel">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@betaranch.com">hello@betaranch.com</a></p>
+        <p>GitHub: <a href="https://github.com/" rel="me noopener" target="_blank">github.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="y"></span> Beta Ranch</div>
+      <div>
+        <a href="#" aria-disabled="true" style="pointer-events:none;opacity:.6;">Privacy</a>
+        ·
+        <a href="#" aria-disabled="true" style="pointer-events:none;opacity:.6;">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year without requiring a build step
+    (function(){
+      var y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
+
+
