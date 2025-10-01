@@ -3,4 +3,7 @@ Allow: /
 
 Sitemap: https://betaranch.com/sitemap.xml
 
+# Block internal docs from indexing
+Disallow: /docs/
+
 
